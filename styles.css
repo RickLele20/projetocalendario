@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2420;
+}
+
+.calendar {
+    height: 610px;
+    width: 700px;
+    background-color: #524039 ;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffc8af;
+    color: white;
+}
+
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #e4b49e;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.calendar-body {
+    padding: 20px;
+}
+
+.day-names {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffc8af;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+    color: #fdffef;
+}
+
+.days div:hover {
+    background-color: #362b27;
+    border-radius: 50px;
+}
+
+.today {
+    background-color: #e4b49e;
+    color: white;
+    border-radius: 50px;
+}
+
+.comment-section {
+    width: 100%;
+    max-width: 600px;
+    background-color: #524039;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Título da seção de comentários */
+.comment-section h3 {
+    margin-left: 35%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffc8af;
+}
+
+/* Estilo do formulário de comentários */
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo da área de texto para o comentário */
+.comment-section textarea {
+    width: 550x;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ffc8af;
+    font-size: 16px;
+}
+
+/* Estilo do campo de e-mail */
+.comment-section input[type="email"] {
+    width: 580px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ffc8af;
+    font-size: 16px;
+}
+
+/* Estilo do botão de envio */
+.comment-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc8af;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.comment-section button:hover {
+    background-color: #ffc8af;
+}
+
+/* Estilo dos comentários exibidos */
+.comment-list {
+    margin-top: 20px;
+}
+
+/* Estilo de cada comentário */
+.comment-list .comment {
+    padding: 10px;
+    border-bottom: 1px solid #524039;
+}
+
+.comment-list .comment:last-child {
+    border-bottom: none;
+}
+
+/* Estilo do texto do comentário */
+.comment-list .comment p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilo do e-mail do autor do comentário */
+.comment-list .comment .email {
+    font-size: 14px;
+    color: #ffc8af;
+    color: #ffc8af
+}
+
+
+
+.holiday {
+    background-color: #e28d66; /* Destaque para feriados */
+    color: white;
+    border-radius: 50px;
+}
+
+.holiday:hover {
+    background-color: #362b27; /* Cor ao passar o mouse sobre feriados */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prev-month"><</button>
+            <h2 id="month-year"></h2>
+            <button id="next-month">></button>
+        </div>
+        <div class="calendar-body">
+            <div class="day-names">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+            </div>
+            <div id="days" class="days"></div>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <h3>Deixe seu Comentário</h3>
+        <form id="commentForm" action="send_comment.php" method="POST">
+            <textarea name="comment" id="comment" placeholder="Escreva seu comentário aqui..." required></textarea>
+            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+            <button type="submit">Enviar Comentário</button>
+        </form>
+
+        <div class="comment-list">
+            <!-- Exemplo de comentário -->
+            <div class="comment">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
